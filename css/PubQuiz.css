@@ -6,6 +6,7 @@ html, body {
 /* Welcome section */
 #welcome{
     position: relative;
+    height: 100%;
 }
 #bg{
     background
@@ -16,7 +17,6 @@ html, body {
     left: 0;
     top: 0;
     z-index: 1;
-    position: fixed;
     transition: all .6s;
     padding: 0px;
     filter: blur(5px);
@@ -30,13 +30,102 @@ html, body {
 
 #mainTitle{
   color: aliceblue;
-  position: fixed;
+  position: absolute;
   top: 40%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   z-index: 9999;
+  font-family: 'Lobster', sans-serif;
+  font-size: 50px;
+  letter-spacing: .01em;
+}
+
+.demo a{
+  z-index: 9999;
+  color: aliceblue;
+  position: fixed;
+  top: 75%;
+  left: 45%;
   font-family: 'Raleway', sans-serif;
-  font-size: 40px;
-  font-weight: 600;
+  letter-spacing: .1em;
+  text-decoration: none;
+  font-size: 20px;
+  transition: opacity .3s;
+}
+
+.demo a:hover {
+  opacity: .5;
+  text-decoration: none;
+}
+
+#welcome a span {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+ @-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+} 
+ /* Section two */
+
+#section2{
+  min-width: 100%;
+  min-height: 100%;
+  display: table;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+}
+.left-side{
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+.right-side{
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
+.section-classes{
+  text-align: center;
+  font-family: 'Nanum Pen Script', cursive;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
 }
