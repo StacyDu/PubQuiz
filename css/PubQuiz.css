@@ -11,6 +11,7 @@ html, body {
   position: fixed;
   top: 50px;
   right: 50px;
+  /* z-index: 9999; */
 }
 #MenuIcon:hover{
   cursor: pointer;
@@ -46,13 +47,62 @@ html, body {
   margin-top: -10px;
   transition: all .3s;
 }
+#MainMenu{
+  height: 100vh;
+  width: 300px;
+  background-color: #000;
+  -webkit-clip-path:polygon(0 0,100% 0,0% 100%,0% 100%);
+  position: fixed;
+  top: 0;
+  left: -300px;
+  transition: all .5s ease-in-out;
+}
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nanum Pen Script', cursive;;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+ul li{
+  margin:  20px;
+}
+.line{
+  height: 2px;
+  width: 150px;
+  background-color: white;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all .3s;
+}
+ul li:hover .line{
+  width: 180px;
+  cursor: pointer;
+}
+#close{
+  position: absolute;
+  bottom: 150px;
+  left:50%;
+  transform: translate(-50%);
+}
+#close:hover{
+  cursor: pointer;
+}
 
 /* Welcome section */
 #welcome{
     position: relative;
     height: 100%;
 }
-#bg{
+/* #bg{
     background
     : url(../img/cover_welcome.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -70,23 +120,23 @@ html, body {
     -ms-filter: blur(5px);
     min-width: 100%;
     min-height: 100%;
-}
+} */
 
 #mainTitle{
-  color: aliceblue;
+  color: #000;
   position: absolute;
   top: 40%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  /* z-index: 9999; */
   font-family: 'Lobster', sans-serif;
   font-size: 50px;
   letter-spacing: .01em;
 }
 
 .demo a{
-  z-index: 9999;
+  /* z-index: 9999; */
   color:black;
   position: absolute;
   top: 85%;
