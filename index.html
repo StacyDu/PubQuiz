@@ -14,41 +14,55 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     </head>
 <body>
-
-<section id="welcome" class="demo">
-    <!-- <div id = "bg"><img src="img/cover_welcome.jpg"></div> -->
-    <div id = "bg"></div>
-    <h1 id = "mainTitle">Want to check your knowledge?</h1>
-    <a href="#section2"><span></span>Scroll</a>
-</section>
-
-<section id = "section2" class="demo">
-    <div class = "text-center">
-        <h1 id = "photos-text">Photos</h1>
-        <div id = "photos-buttons">
-            <p class = "buttons">Show all</p>
-            <p class = "buttons">Previous pub Quiz</p>
-            <p class = "buttons">How we prepare it</p>  
-        </div>
+    <!-- Navbar -->    
+    <div id = "MenuIcon">
+        <div id="MenuLine"></div>
     </div>
-    <a href="#section3"><span></span>Scroll</a>
-</section>
+        <ul>
+            <li>Home<div class="line"></div></li>
+            <li>Section2<div class="line"></div></li>
+            <li>Section3<div class="line"></div></li>
+            <li>Section4<div class="line"></div></li>        
+        </ul>
+    <div id = "close">
+        <img src="img/close.png" heigh = "30px" width="30px"/>
+    </div>
+    <!-- Section first -->
+    <section id="welcome" class="demo">
+        <!-- <div id = "bg"><img src="img/cover_welcome.jpg"></div> -->
+        <div id = "bg"></div>
+        <h1 id = "mainTitle">Want to check your knowledge?</h1>
+        <a href="#section2"><span></span>Scroll</a>
+    </section>
 
-<section id="section3" class="demo">
-    <container class = "left-side">
-        <h2 class = "section-classes">We have fun</h2>
-        <div class = "photo-box"></div>
-    </container>
-    <container class = "right-side">
-        <h2 class = "section-classes">And win super Prises</h2>
-        <div class = "first-place"></div>
-        <div class = "last-place"></div>        
-    </container>
-</section>
+    <section id = "section2" class="demo">
+            <i class="fa fa-bars toggle_menu"></i>
+        <div class = "text-center">
+            <h1 id = "photos-text">Photos</h1>
+            <div id = "photos-buttons">
+                <p class = "buttons">Show all</p>
+                <p class = "buttons">Previous pub Quiz</p>
+                <p class = "buttons">How we prepare it</p>  
+            </div>
+        </div>
+        <a href="#section3"><span></span>Scroll</a>
+    </section>
+
+    <section id="section3" class="demo">
+        <container class = "left-side">
+            <h2 class = "section-classes">We have fun</h2>
+            <div class = "photo-box"></div>
+        </container>
+        <container class = "right-side">
+            <h2 class = "section-classes">And win super Prises</h2>
+            <div class = "first-place"></div>
+            <div class = "last-place"></div>        
+        </container>
+    </section>
 
 </body>
 </html>

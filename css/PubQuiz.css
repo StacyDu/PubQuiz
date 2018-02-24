@@ -3,6 +3,50 @@ html, body {
   height: 100%;
 }
 
+/* Navbar */
+
+#MenuIcon{
+  height: 25px;
+  width: 50px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+#MenuIcon:hover{
+  cursor: pointer;
+}
+#MenuLine{
+  height: 4px;
+  width: 50px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s;
+}
+#MenuLine::before{
+  content:"";
+  height: 4px;
+  width: 40px;
+  background-color: #000;
+  position: absolute;
+  margin-top: 10px;
+  transition: all .3s;
+}
+#MenuIcon:hover #MenuLine{
+  width: 40px;
+}
+#MenuLine::after{
+  content:"";
+  height: 4px;
+  width: 40px;
+  background-color: #000;
+  position: absolute;
+  margin-top: -10px;
+  transition: all .3s;
+}
+
 /* Welcome section */
 #welcome{
     position: relative;
