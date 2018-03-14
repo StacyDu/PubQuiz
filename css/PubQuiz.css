@@ -11,7 +11,7 @@ html, body {
   position: fixed;
   top: 50px;
   right: 50px;
-  /* z-index: 9999; */
+  z-index: 9999;
 }
 #MenuIcon:hover{
   cursor: pointer;
@@ -48,6 +48,7 @@ html, body {
   transition: all .3s;
 }
 #MainMenu{
+  z-index: 9999;
   height: 100vh;
   width: 300px;
   background-color: #000;
@@ -56,6 +57,7 @@ html, body {
   top: 0;
   left: -300px;
   transition: all .5s ease-in-out;
+  opacity: .5;
 }
 ul{
   list-style: none;
@@ -84,12 +86,12 @@ ul li{
   transition: all .3s;
 }
 ul li:hover .line{
-  width: 180px;
+  width: 100px;
   cursor: pointer;
 }
 #close{
   position: absolute;
-  bottom: 150px;
+  bottom: 10%;
   left:50%;
   transform: translate(-50%);
 }
@@ -101,43 +103,31 @@ ul li:hover .line{
 #welcome{
     position: relative;
     height: 100%;
-}
-/* #bg{
     background
-    : url(../img/cover_welcome.jpg) no-repeat center center fixed;
+    : url(../img/img.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    transition: all .6s;
-    padding: 0px;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    min-width: 100%;
-    min-height: 100%;
-} */
+}
 
 #mainTitle{
-  color: #000;
+  padding: 20px;
+  color: #fff;
   position: absolute;
   top: 40%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  /* z-index: 9999; */
   font-family: 'Lobster', sans-serif;
-  font-size: 50px;
-  letter-spacing: .01em;
+  font-size: 70px;
+  letter-spacing: .05em;
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
 }
+
 
 .demo a{
   /* z-index: 9999; */
-  color:black;
+  color:#fff;
   position: absolute;
   top: 85%;
   left: 45%;
@@ -160,8 +150,8 @@ ul li:hover .line{
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb05 1.5s infinite;
