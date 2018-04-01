@@ -1,3 +1,4 @@
+// Section for the nav
 $(document).ready(function(){
   $("#MenuIcon").click(function(){
       $("#MainMenu").css("left", "0px");
@@ -24,6 +25,24 @@ $(document).ready(function(){
   });
 
 })
+// Section for the quiz
+// Creating the server
+const http = require('http');
+const server = http.createServer(function(request,response){
+})
+server.listen(3000);
+const fs = require("fs");
+const text = fs.readFileSync("js/questions.json", "utf");
+response.end(text);
+console.log(text);
 
 
 
+
+// var myRequest = new XMLHttpRequest();
+// myRequest.open("GET", "https://api.myjson.com/bins/ufttx");
+// myRequest.onload = function(){
+//   var myData = JSON.parse(myRequest.responseText);
+//   console.log(myData[0]);
+// }
+// myRequest.send();

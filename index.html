@@ -12,6 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/PubQuiz.js"></script>
+        <script type="text/javascript" src="js/questions.json"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--google fonts-->
@@ -26,10 +27,10 @@
         </div>
         <div id="MainMenu">
                 <ul>
-                    <li>Home<div class="line"></div></li>
-                    <li>Section2<div class="line"></div></li>
-                    <li>Section3<div class="line"></div></li>
-                    <li>Section4<div class="line"></div></li>        
+                    <li><a href="#welcome" class="nav-navigation">Home<div class="line"></div></a></li>
+                    <li><a href="#section2" class="nav-navigation">Section2<div class="line"></div></a></li>
+                    <li><a href="#section3" class="nav-navigation">Section3<div class="line"></div></a></li>
+                    <li><a href="#section4" class="nav-navigation">Section4<div class="line"></div></a></li>        
                 </ul>
             <div id = "close">
                 <img src="img/close.png" heigh = "30px" width="30px"/>
@@ -38,7 +39,7 @@
     <!-- Section first -->
         <!-- <hr class="title-line"> -->
         <h1 id = "mainTitle">PubQuiz In English</h1>
-        <a href="#section2"><span></span>Scroll</a>
+        <a href="#section2"  class="scroll"><span></span>Scroll</a>
     </section>
 
     <section id = "section2" class="demo">
@@ -56,15 +57,26 @@
 
     <section id="section3" class="demo">
         <container class = "left-side">
-            <h2 class = "section-classes">We have fun</h2>
-            <div class = "photo-box"></div>
+            <h2 class = "section-classes">Check our last quiz here!</h2>
+            <div class = "quiz-box">
+                <div>
+                    <ul>
+                        <li>Question No.1</li>
+                        <li>Question No.2</li>
+                        <li>Question No.3</li>
+                        <li>Question No.4</li>                        
+                    </ul>
+                </div>
+            </div>
         </container>
         <container class = "right-side">
-            <h2 class = "section-classes">And win super Prises</h2>
+            <h2 class = "section-classes">Box for smth</h2>
             <div class = "first-place"></div>
             <div class = "last-place"></div>        
         </container>
     </section>
 
+    <section id="section4" class="demo">
+    </section>
 </body>
 </html>
