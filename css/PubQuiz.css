@@ -19,7 +19,7 @@ html, body {
 #MenuLine{
   height: 4px;
   width: 50px;
-  background-color: #000;
+  background-color: #E0FBFC;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,7 +30,7 @@ html, body {
   content:"";
   height: 4px;
   width: 40px;
-  background-color: #000;
+  background-color: #E0FBFC;
   position: absolute;
   margin-top: 10px;
   transition: all .3s;
@@ -42,7 +42,7 @@ html, body {
   content:"";
   height: 4px;
   width: 40px;
-  background-color: #000;
+  background-color: #E0FBFC;
   position: absolute;
   margin-top: -10px;
   transition: all .3s;
@@ -132,7 +132,7 @@ html, body {
 }
 
 
-.skroll{
+.skroll a{
   /* z-index: 9999; */
   color:#fff;
   position: absolute;
@@ -145,7 +145,7 @@ html, body {
   transition: opacity .3s;
 }
 
-.skroll:hover {
+.skroll a:hover {
   opacity: .5;
   text-decoration: none;
 }
@@ -199,7 +199,7 @@ html, body {
   min-height: 100%;
   display: table;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: #9DB4C0;
   position: relative;
 }
 
@@ -230,7 +230,7 @@ html, body {
   min-width: 100%;
   min-height: 100%;
   position: relative;
-  background-color: greenyellow;
+  background-color: #5C6B73;
 }
 .left-side{
   position: absolute;
